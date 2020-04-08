@@ -6,7 +6,7 @@ spring:
     allow-bean-definition-overriding: true
   ldap:
     embedded:
-      ldif: landon.ldif
+      ldif: ldap.ldif
       base-dn: dc=richard,dc=com
       port: 8389
 
