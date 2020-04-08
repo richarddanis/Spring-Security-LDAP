@@ -17,7 +17,7 @@
     <properties>
         <java.version>11</java.version>
 
-        <start-class>com.richard.danis.www.skeleton.Starter</start-class>
+        <start-class>com.richard.danis.www.security.ldap.Starter</start-class>
 
         <project.jdk.version>${java.version}</project.jdk.version>
         <project.sourceEncoding>UTF-8</project.sourceEncoding>
@@ -77,6 +77,20 @@
             <artifactId>spring-boot-starter-log4j2</artifactId>
         </dependency>
 
+        <!-- Spring Security -->
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-ldap</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.unboundid</groupId>
+            <artifactId>unboundid-ldapsdk</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
         <!-- Swagger Dependencies -->
         <dependency>
             <groupId>io.springfox</groupId>
@@ -100,6 +114,10 @@
                     <artifactId>junit-vintage-engine</artifactId>
                 </exclusion>
             </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
     </dependencies>
 

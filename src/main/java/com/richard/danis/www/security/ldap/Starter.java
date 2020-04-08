@@ -1,4 +1,4 @@
-package com.richard.danis.www.skeleton;
+package com.richard.danis.www.security.ldap;
 
 import org.springframework.boot.ResourceBanner;
 import org.springframework.boot.SpringApplication;

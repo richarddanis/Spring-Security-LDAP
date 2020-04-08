@@ -1,7 +1,10 @@
-# Skeleton App for Spring Boot Applications
+# LDAP Security App for Spring Boot Applications
 ## Prerequisites
 * Java 11
 * Maven 3.5.0+
+
+## Technology stack
+* Spring security - LDAP
 
 # Development
 ## Building

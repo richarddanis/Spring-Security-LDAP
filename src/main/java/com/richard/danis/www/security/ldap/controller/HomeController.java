@@ -1,4 +1,4 @@
-package com.richard.danis.www.skeleton.controller;
+package com.richard.danis.www.security.ldap.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

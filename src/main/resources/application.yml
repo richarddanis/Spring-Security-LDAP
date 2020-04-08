@@ -1,9 +1,14 @@
-# Spring Configuration
+# Spring & LDAP Configuration
 spring:
   application:
     name: @project.name@
   main:
     allow-bean-definition-overriding: true
+  ldap:
+    embedded:
+      ldif: landon.ldif
+      base-dn: dc=richard,dc=com
+      port: 8389
 
 # Swagger Documentation
 swagger:

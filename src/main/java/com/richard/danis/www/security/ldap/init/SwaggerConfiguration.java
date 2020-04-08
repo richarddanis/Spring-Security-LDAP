@@ -1,4 +1,4 @@
-package com.richard.danis.www.skeleton.init;
+package com.richard.danis.www.security.ldap.init;
 
 import com.fasterxml.classmate.TypeResolver;
 import org.springframework.beans.factory.annotation.Value;
