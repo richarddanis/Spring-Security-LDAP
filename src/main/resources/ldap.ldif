@@ -15,7 +15,7 @@ objectClass: top
 objectClass: organizationalUnit
 ou: groups
 
-dn: uid=fpmoles,ou=people,dc=richard,dc=com
+dn: uid=rdanis,ou=people,dc=richard,dc=com
 objectclass: top
 objectclass: person
 objectclass: organizationalPerson
@@ -40,11 +40,11 @@ dn: cn=admin,ou=groups,dc=richard,dc=com
 objectclass: top
 objectclass: groupOfUniqueNames
 cn: admins
-uniqueMember: uid=fpmoles,ou=people,dc=richard,dc=com
+uniqueMember: uid=rdanis,ou=people,dc=richard,dc=com
 
 dn: cn=user,ou=groups,dc=richard,dc=com
 objectclass: top
 objectclass: groupOfUniqueNames
 cn: users
-uniqueMember: uid=fpmoles,ou=people,dc=richard,dc=com
+uniqueMember: uid=rdanis,ou=people,dc=richard,dc=com
 uniqueMember: uid=jdoe,ou=people,dc=richard,dc=com

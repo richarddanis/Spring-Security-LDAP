@@ -15,4 +15,4 @@ swagger:
   service:
     version: "1.0.0"
     title: ${spring.application.name}
-    description: "Skeleton app swagger"
+    description: "Spring-LDAP app swagger"

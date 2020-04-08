@@ -33,7 +33,7 @@ public class ApplicationSecurityConfiguration extends WebSecurityConfigurerAdapt
                 .groupSearchBase("ou=groups")
                 .authoritiesMapper(authoritiesMapper())
                 .contextSource()
-                .url("ldap://localhost:8389/dc=frankmoley,dc=com")
+                .url("ldap://localhost:8389/dc=richard,dc=com")
                 .and()
                 .passwordCompare()
                 .passwordEncoder(new LdapShaPasswordEncoder())  //DO NOT USE ON PROD !
@@ -47,6 +47,9 @@ public class ApplicationSecurityConfiguration extends WebSecurityConfigurerAdapt
                 .authorizeRequests()
                 .antMatchers("/", "/index").permitAll()
                 .anyRequest().authenticated()
+                .and()
+                .formLogin()
+                .defaultSuccessUrl("/index", true)
                 .and()
                 .logout().invalidateHttpSession(true)
                 .clearAuthentication(true)
